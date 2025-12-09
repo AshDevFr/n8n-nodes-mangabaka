@@ -2,6 +2,8 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 import { seriesDescription } from './resources/series';
 import { libraryDescription } from './resources/library';
 import { genresDescription } from './resources/genres';
+import { newsDescription } from './resources/news';
+import { sourceDescription } from './resources/source';
 
 export class MangaBaka implements INodeType {
 	description: INodeTypeDescription = {
@@ -47,8 +49,16 @@ export class MangaBaka implements INodeType {
 						value: 'library',
 					},
 					{
+						name: 'News',
+						value: 'news',
+					},
+					{
 						name: 'Series',
 						value: 'series',
+					},
+					{
+						name: 'Source',
+						value: 'source',
 					},
 				],
 				default: 'series',
@@ -56,6 +66,8 @@ export class MangaBaka implements INodeType {
 			...seriesDescription,
 			...libraryDescription,
 			...genresDescription,
+			...newsDescription,
+			...sourceDescription,
 		],
 	};
 }
