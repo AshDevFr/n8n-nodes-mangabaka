@@ -1,4 +1,4 @@
-# Docker Compose Setup for Development
+# Docker Compose Setup for n8n-nodes-mangabaka Development
 
 This setup provides a complete development environment with n8n running in Docker containers, with automatic rebuilding and hot-reloading of the MangaBaka node using Docker Compose's native watch feature.
 
